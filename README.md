@@ -3,6 +3,7 @@
 <img width="372" height="752" alt="image" src="https://github.com/user-attachments/assets/091b5011-9dbb-475a-bfef-cba4a77ae67e" />
 
 **Visao Geral**
+
 Projeto em .NET MAUI que organiza um calculo de IMC (Indice de Massa Corporal) usando o padrao MVVM. O ViewModel recebe altura (cm) e peso (kg) e expõe o resultado do IMC para binding na interface.
 
 **Funcionalidades**
