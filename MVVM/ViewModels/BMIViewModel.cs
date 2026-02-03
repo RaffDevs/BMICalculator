@@ -9,13 +9,14 @@ public partial class BMIViewModel : ObservableObject
     private readonly BMI _bmi = new();
 
     [NotifyPropertyChangedFor(nameof(Result))]
+    [NotifyPropertyChangedFor(nameof(ResultCategory))]
     [ObservableProperty]
-    public float height = 0f;
-
+    public float height = 25f;
 
     [NotifyPropertyChangedFor(nameof(Result))]
+    [NotifyPropertyChangedFor(nameof(ResultCategory))]
     [ObservableProperty]
-    public float weight = 0f;
+    public float weight = 50f;
 
     public float Result
     {
@@ -24,6 +25,19 @@ public partial class BMIViewModel : ObservableObject
             var h = Height / 100f;
             if (h <= 0) return 0;
             return Weight / (h*h);
+        }
+    }
+
+    public string ResultCategory
+    {
+        get
+        {
+            var bmi = Result;
+            if (bmi == 0) return "Desnutrition";
+            if (bmi < 18.5f) return "Underweight";
+            if (bmi < 24.9f) return "Normal weight";
+            if (bmi < 29.9f) return "Overweight";
+            return "Obesity";
         }
     }
 

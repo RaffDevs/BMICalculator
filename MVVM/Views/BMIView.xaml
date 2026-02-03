@@ -108,7 +108,7 @@
                 <Label
                     FontSize="Title"
                     HorizontalOptions="Center"
-                    Text="Normal"
+                    Text="{Binding ResultCategory}"
                     />
                 <gauge:SfRadialGauge>
                     <gauge:SfRadialGauge.Axes>
