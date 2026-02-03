@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BMICalculator.Pages.SegundaView"
+             Title="SegundaView"
+             BackgroundColor="WhiteSmoke">
+
+            <Grid ColumnDefinitions="*,*" RowSpacing="5" ColumnSpacing="5" RowDefinitions="*,*, *, *">
+                <Grid Grid.Row="0" BackgroundColor="LightBlue">
+                    <Label
+                        VerticalOptions="Center"
+                         HorizontalOptions="Center"
+                        Text="Hello"/>
+                </Grid>
+                <Grid Grid.Row="1" BackgroundColor="LightGray">
+                    <Label
+                        VerticalOptions="Center"
+                         HorizontalOptions="Center"
+                        Text="Hello2"/>
+                </Grid>
+                <Grid Grid.Row="0" Grid.Column="1" BackgroundColor="LightCoral">
+                    <Label
+                        VerticalOptions="Center"
+                         HorizontalOptions="Center"
+                        Text="Hello"/>
+                </Grid>
+                <Grid Grid.Row="1" Grid.Column="1" BackgroundColor="LightGreen">
+                    <Button
+                        Text="Click Me"/>
+                </Grid>
+
+                <Grid Grid.Row="2" Grid.Column="1" BackgroundColor="LightCoral">
+                    <Label
+                        VerticalOptions="Center"
+                         HorizontalOptions="Center"
+                        Text="Hello"/>
+                </Grid>
+                <Grid Grid.Row="2" Grid.Column="0" BackgroundColor="LightGreen">
+                    <Button
+                        Text="Click Me"/>
+                </Grid>
+
+                <Grid Grid.Row="3" Grid.Column="1" BackgroundColor="LightCoral">
+                    <Label
+                        VerticalOptions="Center"
+                         HorizontalOptions="Center"
+                        Text="Hello"/>
+                </Grid>
+                <Grid Grid.Row="3" Grid.Column="0" BackgroundColor="LightGreen">
+                    <Button
+                        Text="Click Me"/>
+                </Grid>
+            </Grid>
+</ContentPage>
